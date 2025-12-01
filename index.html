@@ -159,6 +159,7 @@
       cursor: pointer;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
       white-space: nowrap;
+      display: inline-block;
     }
 
     .nav-cta:hover {
@@ -694,9 +695,15 @@
           <a href="#intake">Case intake</a>
           <a href="#confidentiality">Confidentiality</a>
           <a href="#contact">Contact</a>
-          <button class="nav-cta" onclick="scrollToSection('intake')">
-            Start Zoom Case Evaluation
-          </button>
+          <!-- NAVBAR WHATSAPP CTA -->
+          <a
+            class="nav-cta"
+            href="https://wa.me/971527105683?text=Hi%2C%20I%20need%20help%20with%20a%20cryptocurrency%20case."
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp Case Evaluation
+          </a>
         </nav>
       </div>
     </header>
@@ -711,7 +718,7 @@
           </div>
 
           <h1 class="hero-title-ar">
-            خدمة تحقيق جنائي وتتبع العملات الرقمية  
+            خدمة تحقيق جنائي وتتبع العملات الرقمية
           </h1>
           <h2 class="hero-title-en">
             CRYPTO INVESTIGATION &amp; WALLET TRACING
@@ -725,8 +732,9 @@
           </p>
 
           <div class="hero-cta-row">
-            <button class="btn-primary" onclick="scrollToSection('intake')">
-              Start Case Evaluation (Zoom)
+            <!-- HERO WHATSAPP CTA -->
+            <button class="btn-primary" onclick="openWhatsApp()">
+              Chat on WhatsApp (Case Evaluation)
             </button>
             <button class="btn-ghost" onclick="scrollToSection('services')">
               View Services &amp; Process
@@ -734,8 +742,8 @@
           </div>
 
           <p class="hero-note">
-            We do everything we can to **support and guide you technically**, preparing clear reports and
-            documents so that police, prosecutors and lawyers have professional evidence to act on.  
+            We do everything we can to <strong>support and guide you technically</strong>, preparing clear reports and
+            documents so that police, prosecutors and lawyers have professional evidence to act on.
             Final decisions and actions are always taken by the competent authorities and exchanges.
           </p>
         </div>
@@ -916,9 +924,9 @@
             <div class="card-soft">
               <h3>Arabic Summary – ملخص العملية</h3>
               <p dir="rtl" style="text-align:right;font-size:0.8rem;">
-                تبدأ كل حالة بجلسة تقييم عبر مكالمة Zoom لمراجعة تفاصيل الحادث والتأكد من إمكانية التتبع.  
+                تبدأ كل حالة بجلسة تقييم عبر مكالمة Zoom لمراجعة تفاصيل الحادث والتأكد من إمكانية التتبع.
                 بعد ذلك نقوم بتحليل أولي للمحافظ والمعاملات، ثم تحقيق جنائي أعمق مع تتبع متقدم وربط العناوين
-                بالمنصات والخدمات.  
+                بالمنصات والخدمات.
                 في النهاية نُعد تقريرًا فنيًا كاملاً يمكنك أنت أو محاميك تقديمه للشرطة أو النيابة أو منصات التداول.
               </p>
             </div>
@@ -957,8 +965,8 @@
                 You remain in control at all times. Our role is to support you and your legal team with clear,
                 structured technical documentation – not to replace legal advice or law-enforcement action.
               </p>
-              <button class="btn-primary" onclick="alertIntake()">
-                Request Zoom Case Evaluation
+              <button class="btn-primary" onclick="openWhatsApp()">
+                Request Zoom Evaluation via WhatsApp
               </button>
             </div>
 
@@ -1091,13 +1099,10 @@
               <ul class="contact-list">
                 <li><strong>Entity:</strong> Gallubax Gateway Information Technology</li>
                 <li><strong>Scope:</strong> Cryptocurrency Investigation – UAE &amp; GCC</li>
-                <li><strong>Contact (example):</strong> info@gg-it-forensics.example</li>
+                <li><strong>Phone / WhatsApp:</strong> +971 52 710 5683</li>
+                <li><strong>Email:</strong> abmoal14@gmail.com</li>
                 <li><strong>Location:</strong> Dubai, United Arab Emirates</li>
               </ul>
-              <p style="font-size:0.8rem;color:var(--text-muted);margin-top:6px;">
-                Replace the email and add your final business contact details once your infrastructure and NDA
-                process are ready.
-              </p>
             </div>
           </div>
         </div>
@@ -1118,10 +1123,10 @@
       }
     }
 
-    function alertIntake() {
-      alert(
-        "This button is a placeholder.\n\nIn productie kun je hier een formulier, e-mail link of agenda (bijv. Zoom/Calendly) koppelen voor de eerste intake."
-      );
+    function openWhatsApp() {
+      const url =
+        "https://wa.me/971527105683?text=Hi%2C%20I%20need%20help%20with%20a%20cryptocurrency%20investigation.";
+      window.open(url, "_blank", "noopener");
     }
   </script>
 </body>
