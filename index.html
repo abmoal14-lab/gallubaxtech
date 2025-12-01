@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallubax Gateway Information Technology - Cryptocurrency Investigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Gallubax Gateway Information Technology - Cryptocurrency Investigation & Forensic Tracing – UAE & GCC."
+  />
+  <style>
+    :root {
+      --navy: #0a1a2f;
+      --navy-soft: #111d35;
+      --gold: #d4af37;
+      --gold-soft: #e0c76b;
+      --text-light: #f5f7fb;
+      --text-muted: #c7c9cc;
+      --danger: #ff4f4f;
+      --card-bg: #121d35;
+      --border-subtle: #22314f;
+      --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.55);
+      --radius-xl: 18px;
+      --radius-xxl: 32px;
+      --transition-fast: 0.2s ease-in-out;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #192549 0, #050816 55%, #02040a 100%);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: linear-gradient(to bottom, rgba(5, 8, 22, 0.9), rgba(5, 8, 22, 0.75));
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+    }
+
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 16px;
+      border: 1px solid rgba(212, 175, 55, 0.7);
+      background: radial-gradient(circle at 20% 10%, #fce9a6 0, #d4af37 32%, #814d0a 92%);
+      position: relative;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.55);
+      overflow: hidden;
+    }
+
+    .logo-mark::before,
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      border: 1px solid rgba(5, 8, 22, 0.7);
+    }
+
+    .logo-mark::before {
+      inset: 8px 6px 16px 6px;
+      transform: rotate(-20deg);
+      border-style: dashed;
+    }
+
+    .logo-mark::after {
+      inset: 16px 4px 4px 18px;
+      transform: rotate(22deg);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: color var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-soft);
+      border-color: rgba(212, 175, 55, 0.7);
+    }
+
+    .nav-cta {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      background: linear-gradient(135deg, #f6e4a5, #d4af37, #8b5b10);
+      color: #191004;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
+      filter: brightness(1.05);
+    }
+
+    /* HERO */
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      max-width: 1080px;
+      margin: 22px auto 12px auto;
+      padding: 0 20px 8px 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 880px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 0 0, rgba(212, 175, 55, 0.3), transparent 60%);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      max-width: max-content;
+    }
+
+    .hero-pill span {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-title-ar {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      direction: rtl;
+      text-align: right;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold-soft);
+      margin-top: 4px;
+    }
+
+    .hero-title-en {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .hero-highlight {
+      font-size: 0.85rem;
+      color: var(--gold-soft);
+      margin-top: 4px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #f6e4a5, #d4af37, #8b5b10);
+      color: #191004;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 10px 28px rgba(212, 175, 55, 0.55);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.03);
+      box-shadow: 0 16px 35px rgba(212, 175, 55, 0.7);
+    }
+
+    .btn-ghost {
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(199, 201, 204, 0.4);
+      background: rgba(9, 16, 35, 0.9);
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(212, 175, 55, 0.6);
+      color: var(--gold-soft);
+      background: rgba(9, 16, 35, 0.95);
+    }
+
+    .hero-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .hero-note strong {
+      color: var(--gold-soft);
+      font-weight: 600;
+    }
+
+    .hero-right {
+      border-radius: var(--radius-xxl);
+      padding: 16px 16px 18px 16px;
+      background: radial-gradient(circle at 0 0, rgba(212, 175, 55, 0.35), transparent 55%),
+        linear-gradient(145deg, #050816, #0b1020 40%, #050816 100%);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .badge-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 auto;
+      max-width: 1080px;
+      padding: 0 20px 8px 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(199, 201, 204, 0.4);
+      background: radial-gradient(circle at 0 0, rgba(212, 175, 55, 0.2), rgba(10, 14, 30, 0.95));
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      box-shadow: 0 0 8px rgba(212, 175, 55, 0.85);
+    }
+
+    .hero-right-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .hero-right-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-list {
+      list-style: none;
+      margin-top: 4px;
+      display: grid;
+      gap: 4px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .hero-list li::before {
+      content: "• ";
+      color: var(--gold-soft);
+    }
+
+    .hero-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(199, 201, 204, 0.4), transparent);
+      margin: 4px 0;
+    }
+
+    .hero-highlight-block {
+      font-size: 0.78rem;
+      color: var(--gold-soft);
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 1080px;
+      margin: 12px auto;
+      padding: 12px 20px;
+    }
+
+    .section-card {
+      background: radial-gradient(circle at 100% 0, rgba(212, 175, 55, 0.18), transparent 60%),
+        linear-gradient(145deg, #050816, #081123);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 10px 36px rgba(0, 0, 0, 0.7);
+      padding: 18px 18px 18px 18px;
+    }
+
+    .section-header {
+      margin-bottom: 10px;
+    }
+
+    .section-title-en {
+      font-size: 1.02rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+    }
+
+    .section-title-ar {
+      margin-top: 4px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      direction: rtl;
+      text-align: right;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--gold-soft);
+    }
+
+    .section-sub {
+      margin-top: 4px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 760px) {
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card-soft {
+      background: rgba(10, 17, 40, 0.96);
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(199, 201, 204, 0.24);
+      padding: 12px 14px;
+    }
+
+    .card-soft h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .card-soft p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .card-soft ul {
+      margin-top: 6px;
+      padding-left: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .card-soft ul li {
+      margin-bottom: 3px;
+    }
+
+    .steps {
+      list-style: none;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: grid;
+      gap: 8px;
+      margin-top: 6px;
+      counter-reset: step;
+    }
+
+    .steps li {
+      position: relative;
+      padding-left: 26px;
+    }
+
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.8);
+      font-size: 0.68rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-soft);
+    }
+
+    .sub-note {
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .sub-note strong {
+      color: var(--gold-soft);
+    }
+
+    /* INTAKE SECTION */
+    .intake-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 820px) {
+      .intake-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .intake-left p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .intake-note {
+      font-size: 0.8rem;
+      color: var(--gold-soft);
+      margin-bottom: 10px;
+    }
+
+    .intake-right {
+      background: rgba(9, 15, 32, 0.96);
+      border-radius: var(--radius-xl);
+      border: 1px dashed rgba(212, 175, 55, 0.6);
+      padding: 12px 14px;
+    }
+
+    .intake-right h3 {
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+    }
+
+    .intake-field {
+      margin-bottom: 8px;
+    }
+
+    .intake-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .intake-input,
+    .intake-textarea,
+    .intake-select {
+      width: 100%;
+      padding: 8px 9px;
+      border-radius: 10px;
+      border: 1px solid rgba(199, 201, 204, 0.35);
+      background: rgba(4, 8, 22, 0.95);
+      color: var(--text-light);
+      font-size: 0.8rem;
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .intake-input:focus,
+    .intake-textarea:focus,
+    .intake-select:focus {
+      border-color: rgba(212, 175, 55, 0.8);
+      box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.4);
+    }
+
+    .intake-textarea {
+      min-height: 70px;
+      resize: vertical;
+    }
+
+    .intake-disclaimer {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .intake-disclaimer strong {
+      color: var(--gold-soft);
+    }
+
+    /* CONFIDENTIALITY / CHAIN */
+    .conf-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 820px) {
+      .conf-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .conf-block {
+      background: rgba(5, 9, 24, 0.96);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      padding: 12px 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .conf-block h3 {
+      font-size: 0.88rem;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .conf-block ul {
+      margin-top: 5px;
+      padding-left: 16px;
+    }
+
+    .conf-block ul li {
+      margin-bottom: 4px;
+    }
+
+    /* CONTACT / FOOTER */
+    .contact-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 820px) {
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .contact-card p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-list {
+      list-style: none;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .contact-list li {
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(199, 201, 204, 0.28);
+      margin-top: 18px;
+      padding: 10px 20px 16px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      background: radial-gradient(circle at 50% 0, rgba(212, 175, 55, 0.18), rgba(3, 6, 18, 0.98));
+    }
+
+    .footer span {
+      display: block;
+    }
+
+    /* SMALL JS TO SCROLL */
+    .clickable {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="nav-brand clickable" onclick="scrollToSection('top')">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <div class="brand-name">Gallubax Gateway Information Technology</div>
+            <div class="brand-sub">Cryptocurrency Investigation – UAE &amp; GCC</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#intake">Case intake</a>
+          <a href="#confidentiality">Confidentiality</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-cta" onclick="scrollToSection('intake')">
+            Start Zoom Case Evaluation
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero-left">
+          <div class="hero-pill">
+            <span>CRYPTOCURRENCY FORENSICS</span>
+            <span>UAE &amp; GCC</span>
+          </div>
+
+          <h1 class="hero-title-ar">
+            خدمة تحقيق جنائي وتتبع العملات الرقمية  
+          </h1>
+          <h2 class="hero-title-en">
+            CRYPTO INVESTIGATION &amp; WALLET TRACING
+          </h2>
+          <p class="hero-sub">
+            Technical forensic tracing of digital assets with police- and lawyer-ready documentation.
+            Based in Dubai, serving clients across the GCC and internationally.
+          </p>
+          <p class="hero-highlight">
+            First step: a structured Zoom intake to review your case and determine feasibility and next steps.
+          </p>
+
+          <div class="hero-cta-row">
+            <button class="btn-primary" onclick="scrollToSection('intake')">
+              Start Case Evaluation (Zoom)
+            </button>
+            <button class="btn-ghost" onclick="scrollToSection('services')">
+              View Services &amp; Process
+            </button>
+          </div>
+
+          <p class="hero-note">
+            We do everything we can to **support and guide you technically**, preparing clear reports and
+            documents so that police, prosecutors and lawyers have professional evidence to act on.  
+            Final decisions and actions are always taken by the competent authorities and exchanges.
+          </p>
+        </div>
+
+        <aside class="hero-right" aria-label="Forensic snapshot">
+          <div>
+            <div class="hero-right-title">
+              Technical Forensic Snapshot
+            </div>
+            <div class="hero-right-sub">
+              Example of what a tracing investigation covers:
+            </div>
+          </div>
+
+          <ul class="hero-list">
+            <li>Identification of source and destination wallets</li>
+            <li>Multi-hop tracing across chains and services</li>
+            <li>Detection of deposit addresses at exchanges</li>
+            <li>Risk and exposure indicators where available</li>
+          </ul>
+
+          <div class="hero-divider"></div>
+
+          <div class="hero-highlight-block">
+            When required, we can monitor the movement of stolen assets 24 hours a day so you do not lose sight of
+            critical activity while legal procedures are underway.
+          </div>
+
+          <div class="hero-divider"></div>
+
+          <div class="hero-right-sub">
+            All investigations are performed in a non-custodial, view-only way using professional blockchain tools
+            and public ledgers.
+          </div>
+        </aside>
+      </section>
+
+      <!-- TRUST BADGES -->
+      <section aria-label="Trust badges">
+        <div class="badge-strip">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Dubai Licensed IT Consultancy</span>
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Forensic Investigation &amp; Tracing</span>
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Police &amp; Lawyer-Ready Reports</span>
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>24h Monitoring When Needed</span>
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>NDA &amp; Strict Confidentiality</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section" aria-labelledby="services-title-en">
+        <div class="section-card">
+          <header class="section-header">
+            <div class="section-title-en" id="services-title-en">
+              SERVICES
+            </div>
+            <div class="section-title-ar">
+              خدمات التحقيق وتتبع العملات الرقمية
+            </div>
+            <p class="section-sub">
+              We focus on technical tracing and documentation for victims, legal teams and institutions.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card-soft">
+              <h3>Wallet Tracing &amp; Flow Analysis</h3>
+              <p>
+                Technical tracing of activity on major chains (e.g. BTC, ETH, USDT, BNB, TRON and others) to
+                understand where assets moved and which services may have received them.
+              </p>
+              <ul>
+                <li>Multi-hop transaction paths</li>
+                <li>Identification of exchange deposit addresses</li>
+                <li>Highlight of mixers, bridges and high-risk services</li>
+              </ul>
+            </div>
+
+            <div class="card-soft">
+              <h3>Police- &amp; Lawyer-Ready Reporting</h3>
+              <p>
+                Preparation of clear, structured reports that can be used by cybercrime units, public prosecutors,
+                lawyers and exchange compliance teams.
+              </p>
+              <ul>
+                <li>Executive summary in plain language</li>
+                <li>Technical evidence with transaction references</li>
+                <li>Annexes with diagrams and flows</li>
+              </ul>
+            </div>
+
+            <div class="card-soft">
+              <h3>Freeze Request &amp; Exchange Support</h3>
+              <p>
+                Technical letters and annexes that help exchanges understand why an account or address may require
+                review or temporary restriction.
+              </p>
+              <ul>
+                <li>Standardised exchange letters</li>
+                <li>Reference to case ID and report findings</li>
+                <li>Support for law-enforcement requests</li>
+              </ul>
+            </div>
+
+            <div class="card-soft">
+              <h3>24h Monitoring &amp; Technical Guidance</h3>
+              <p>
+                In critical cases, we can help monitor suspicious wallets and flows so that you and your legal team
+                do not lose sight of key movements while procedures are ongoing.
+              </p>
+              <ul>
+                <li>Alert on significant movements or exits</li>
+                <li>Timeline overview for legal use</li>
+                <li>Continuous technical guidance, not legal advice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works" class="section" aria-labelledby="how-title-en">
+        <div class="section-card">
+          <header class="section-header">
+            <div class="section-title-en" id="how-title-en">
+              HOW IT WORKS
+            </div>
+            <div class="section-title-ar">
+              كيف تتم عملية التحقيق وتتبع القضية؟
+            </div>
+            <p class="section-sub">
+              A clear four-step process, starting with a Zoom intake, designed to protect you and help legal
+              authorities work with structured technical evidence.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div>
+              <ul class="steps">
+                <li>
+                  <strong>Zoom Case Evaluation</strong> – we review your case details, confirm if traceability is
+                  realistic and outline the technical steps.
+                </li>
+                <li>
+                  <strong>Preliminary Analysis</strong> – initial tracing of key wallets and transactions to confirm
+                  what can be documented.
+                </li>
+                <li>
+                  <strong>Forensic Investigation &amp; Monitoring</strong> – deeper tracing, mapping flows and, where
+                  necessary, 24h monitoring of critical wallets.
+                </li>
+                <li>
+                  <strong>Evidence Report &amp; Exchange/Police Package</strong> – delivery of formal documentation
+                  you or your lawyer can submit to police, prosecutors and exchanges.
+                </li>
+              </ul>
+              <p class="sub-note">
+                <strong>Note:</strong> All work is technical and non-custodial. Decisions about freezing funds,
+                identifying suspects or taking criminal action are always made by the competent authorities and
+                platforms.
+              </p>
+            </div>
+
+            <div class="card-soft">
+              <h3>Arabic Summary – ملخص العملية</h3>
+              <p dir="rtl" style="text-align:right;font-size:0.8rem;">
+                تبدأ كل حالة بجلسة تقييم عبر مكالمة Zoom لمراجعة تفاصيل الحادث والتأكد من إمكانية التتبع.  
+                بعد ذلك نقوم بتحليل أولي للمحافظ والمعاملات، ثم تحقيق جنائي أعمق مع تتبع متقدم وربط العناوين
+                بالمنصات والخدمات.  
+                في النهاية نُعد تقريرًا فنيًا كاملاً يمكنك أنت أو محاميك تقديمه للشرطة أو النيابة أو منصات التداول.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTAKE -->
+      <section id="intake" class="section" aria-labelledby="intake-title-en">
+        <div class="section-card">
+          <header class="section-header">
+            <div class="section-title-en" id="intake-title-en">
+              CASE INTAKE (ZOOM)
+            </div>
+            <div class="section-title-ar">
+              جلسة تقييم الحالة عبر مكالمة فيديو
+            </div>
+            <p class="section-sub">
+              We begin every case with a secure Zoom intake to understand what happened, what assets are involved and
+              which legal or institutional parties may need to be informed.
+            </p>
+          </header>
+
+          <div class="intake-layout">
+            <div class="intake-left">
+              <p>
+                During the intake, we collect only the information needed to assess your case technically: chain,
+                approximate loss, main wallets and any prior contact with police, banks or exchanges.
+              </p>
+              <p class="intake-note">
+                After the intake, we confirm whether a forensic investigation is appropriate for your case and
+                explain the proposed scope. Fees are determined <strong>after</strong> the Zoom intake, based on
+                complexity and the amount of work required.
+              </p>
+              <p>
+                You remain in control at all times. Our role is to support you and your legal team with clear,
+                structured technical documentation – not to replace legal advice or law-enforcement action.
+              </p>
+              <button class="btn-primary" onclick="alertIntake()">
+                Request Zoom Case Evaluation
+              </button>
+            </div>
+
+            <aside class="intake-right" aria-label="Intake fields (for your notes)">
+              <h3>Case Intake – Suggested Fields (Example)</h3>
+              <div class="intake-field">
+                <div class="intake-label">Full Name</div>
+                <input class="intake-input" type="text" placeholder="Your name" />
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Email Address</div>
+                <input class="intake-input" type="email" placeholder="you@example.com" />
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Country of Residence</div>
+                <input class="intake-input" type="text" placeholder="e.g. UAE, KSA, Qatar" />
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Asset &amp; Network</div>
+                <select class="intake-select">
+                  <option>USDT TRC20</option>
+                  <option>USDT ERC20</option>
+                  <option>BTC</option>
+                  <option>ETH</option>
+                  <option>BNB / BSC</option>
+                  <option>Other / Multiple</option>
+                </select>
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Approximate Loss (USD or AED)</div>
+                <input class="intake-input" type="text" placeholder="e.g. 25,000 USD" />
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Main Wallet / Transaction Reference</div>
+                <textarea
+                  class="intake-textarea"
+                  placeholder="Paste main wallet address and/or key transaction hashes here."
+                ></textarea>
+              </div>
+              <div class="intake-field">
+                <div class="intake-label">Have you contacted police or an exchange?</div>
+                <input class="intake-input" type="text" placeholder="Yes/No and short details" />
+              </div>
+
+              <p class="intake-disclaimer">
+                <strong>Important:</strong> This example form does not send data anywhere. It is a template for your
+                future online intake. Actual submissions should be protected by encryption and NDA.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIDENTIALITY & CHAIN -->
+      <section id="confidentiality" class="section" aria-labelledby="conf-title-en">
+        <div class="section-card">
+          <header class="section-header">
+            <div class="section-title-en" id="conf-title-en">
+              CONFIDENTIALITY &amp; DIGITAL CHAIN OF CUSTODY
+            </div>
+            <div class="section-title-ar">
+              السرية وسلسلة حيازة الأدلة الرقمية
+            </div>
+            <p class="section-sub">
+              Evidence must be technically sound and handled with care. Our processes are designed to protect both
+              integrity and confidentiality.
+            </p>
+          </header>
+
+          <div class="conf-grid">
+            <div class="conf-block">
+              <h3>Confidentiality &amp; NDA</h3>
+              <p>
+                All work can be covered by a mutual Non-Disclosure Agreement. Transaction data, wallet addresses and
+                legal case references are treated as confidential technical evidence.
+              </p>
+              <ul>
+                <li>Technical evidence only – not legal advice</li>
+                <li>Sharing limited to client and authorised legal parties</li>
+                <li>No publication or external disclosure without consent</li>
+              </ul>
+            </div>
+
+            <div class="conf-block">
+              <h3>Digital Chain of Custody</h3>
+              <p>
+                We work in a non-custodial manner using publicly verifiable data. Our goal is to make it easy for
+                legal authorities to verify that evidence is authentic and unchanged.
+              </p>
+              <ul>
+                <li>View-only tracing – no asset control</li>
+                <li>Use of TX hashes, block heights and timestamps</li>
+                <li>Reports structured for cybercrime units &amp; exchanges</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="sub-note" style="margin-top:10px;">
+            <strong>Legal Note:</strong> This forensic work supports but does not replace investigations by police,
+            prosecutors or regulators. All enforcement actions remain the responsibility of the competent authorities.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-labelledby="contact-title-en">
+        <div class="section-card">
+          <header class="section-header">
+            <div class="section-title-en" id="contact-title-en">
+              CONTACT
+            </div>
+            <div class="section-title-ar">
+              التواصل وطلب جلسة تقييم
+            </div>
+          </header>
+
+          <div class="contact-card">
+            <div>
+              <p>
+                To request a Zoom case evaluation or to discuss a potential collaboration with law firms, compliance
+                teams or institutions, you can use the contact details below. Technical details should preferably be
+                shared after NDA is in place.
+              </p>
+              <p>
+                We work with clients in the UAE, GCC and internationally, with a strong focus on high-quality,
+                verifiable technical reporting for legal use.
+              </p>
+            </div>
+            <div>
+              <ul class="contact-list">
+                <li><strong>Entity:</strong> Gallubax Gateway Information Technology</li>
+                <li><strong>Scope:</strong> Cryptocurrency Investigation – UAE &amp; GCC</li>
+                <li><strong>Contact (example):</strong> info@gg-it-forensics.example</li>
+                <li><strong>Location:</strong> Dubai, United Arab Emirates</li>
+              </ul>
+              <p style="font-size:0.8rem;color:var(--text-muted);margin-top:6px;">
+                Replace the email and add your final business contact details once your infrastructure and NDA
+                process are ready.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© Gallubax Gateway Information Technology — Cryptocurrency Investigation – UAE &amp; GCC</span>
+      <span>Technical forensic services only. Legal and enforcement decisions remain with the competent authorities.</span>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function alertIntake() {
+      alert(
+        "This button is a placeholder.\n\nIn productie kun je hier een formulier, e-mail link of agenda (bijv. Zoom/Calendly) koppelen voor de eerste intake."
+      );
+    }
+  </script>
+</body>
+</html>
