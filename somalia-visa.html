@@ -1,0 +1,131 @@
+<form action="#" method="post" enctype="multipart/form-data" style="max-width:650px;margin:auto;font-family:Arial;">
+    <h2>Somalia Visa Application (eVisa / eTAS)<br>
+        <span style="font-size:14px;color:gray;">English | عربي | Soomaali</span>
+    </h2>
+
+    <p><strong>Private visa assistance service – Not the Somalia government.</strong></p>
+
+    <hr>
+
+    <!-- PERSONAL INFORMATION -->
+    <h3>A. Personal Information | المعلومات الشخصية | Macluumaadka Shaqsiga</h3>
+
+    <label>First Name | الاسم الأول | Magaca Hore</label>
+    <input type="text" name="first_name" required style="width:100%;margin-bottom:10px;">
+
+    <label>Last Name | اسم العائلة | Magaca Dambe</label>
+    <input type="text" name="last_name" required style="width:100%;margin-bottom:10px;">
+
+    <label>Date of Birth | تاريخ الميلاد | Taariikhda Dhalashada</label>
+    <input type="date" name="dob" required style="width:100%;margin-bottom:10px;">
+
+    <label>Nationality | الجنسية | Jinsiyadda</label>
+    <input type="text" name="nationality" required style="width:100%;margin-bottom:10px;">
+
+    <label>Phone (WhatsApp) | رقم الهاتف | Telefoon (WhatsApp)</label>
+    <input type="text" name="phone" required style="width:100%;margin-bottom:10px;">
+
+    <label>Email | البريد الإلكتروني | Email</label>
+    <input type="email" name="email" required style="width:100%;margin-bottom:10px;">
+
+    <hr>
+
+    <!-- PASSPORT INFORMATION -->
+    <h3>B. Passport Information | معلومات جواز السفر | Macluumaadka Baasaboorka</h3>
+
+    <label>Passport Number | رقم الجواز | Lambarka Baasaboorka</label>
+    <input type="text" name="passport_number" required style="width:100%;margin-bottom:10px;">
+
+    <label>Passport Expiry Date | تاريخ انتهاء الجواز | Taariikhda uu dhacayo</label>
+    <input type="date" name="passport_expiry" required style="width:100%;margin-bottom:10px;">
+
+    <label>Country of Issue | بلد الإصدار | Dalka uu kasoo baxay</label>
+    <input type="text" name="passport_issue_country" required style="width:100%;margin-bottom:10px;">
+
+    <label>Upload Passport Copy | تحميل صورة الجواز | Soo geli Baasaboorka</label>
+    <input type="file" name="passport_file" accept=".jpg,.png,.pdf" required style="width:100%;margin-bottom:10px;">
+
+    <hr>
+
+    <!-- TRAVEL INFORMATION -->
+    <h3>C. Travel Information | معلومات السفر | Macluumaadka Safarka</h3>
+
+    <label>Purpose of Travel | سبب السفر | Ujeedada Safarka</label>
+    <select name="purpose" required style="width:100%;margin-bottom:10px;">
+        <option value="">Choose / اختر / Dooro</option>
+        <option>Tourism | سياحة | Dalxiis</option>
+        <option>Family Visit | زيارة عائلية | Booqasho Qoys</option>
+        <option>Business | عمل | Ganacsi</option>
+        <option>Transit | عبور | Ku-marid</option>
+    </select>
+
+    <label>Arrival Date | تاريخ الوصول | Taariikhda Imaanshaha</label>
+    <input type="date" name="arrival_date" required style="width:100%;margin-bottom:10px;">
+
+    <label>Departure Date | تاريخ المغادرة | Taariikhda Bixitaanka</label>
+    <input type="date" name="departure_date" style="width:100%;margin-bottom:10px;">
+
+    <label>Flight Number (optional) | رقم الرحلة | Lambarka Duulimaadka</label>
+    <input type="text" name="flight_number" style="width:100%;margin-bottom:10px;">
+
+    <label>Address in Somalia | العنوان في الصومال | Cinwaanka Soomaaliya</label>
+    <input type="text" name="address_somalia" required style="width:100%;margin-bottom:10px;">
+
+    <hr>
+
+    <!-- UPLOAD DOCUMENTS -->
+    <h3>D. Documents Upload | تحميل المستندات | Dukumentiyo</h3>
+
+    <label>Upload Passport Photo | تحميل صورة شخصية | Sawirka</label>
+    <input type="file" name="photo" accept=".jpg,.png" required style="width:100%;margin-bottom:10px;">
+
+    <label>Invitation Letter (optional) | خطاب الدعوة | Warqad Casuumaad</label>
+    <input type="file" name="invitation" accept=".jpg,.png,.pdf" style="width:100%;margin-bottom:10px;">
+
+    <label>Other Documents | مستندات أخرى | Dukumentiyo Kale</label>
+    <input type="file" name="other_docs" accept=".jpg,.png,.pdf" style="width:100%;margin-bottom:10px;">
+
+    <hr>
+
+    <!-- EXTRA INFO -->
+    <h3>E. Extra Information | معلومات إضافية | Macluumaad Dheeri ah</h3>
+
+    <label>Applied before? | هل قدمت من قبل؟ | Hore ma u codsatay?</label>
+    <select name="applied_before" required style="width:100%;margin-bottom:10px;">
+        <option value="">Choose / اختر / Dooro</option>
+        <option>Yes | نعم | Haa</option>
+        <option>No | لا | Maya</option>
+    </select>
+
+    <label>Receive WhatsApp Updates? | هل تريد تحديثات واتساب؟ | Ma rabtaa WhatsApp updates?</label>
+    <select name="whatsapp_updates" required style="width:100%;margin-bottom:10px;">
+        <option value="">Choose / اختر / Dooro</option>
+        <option>Yes | نعم | Haa</option>
+        <option>No | لا | Maya</option>
+    </select>
+
+    <label>Notes | ملاحظات | Fiiro gaar ah</label>
+    <textarea name="notes" rows="4" style="width:100%;margin-bottom:10px;"></textarea>
+
+    <hr>
+
+    <!-- CONFIRMATION -->
+    <h3>F. Confirmation | التأكيد | Xaqiijin</h3>
+
+    <label>
+        <input type="checkbox" name="confirm_info" required>
+        I confirm information is correct | أؤكد أن المعلومات صحيحة | Waxaan xaqiijinayaa in xogta ay sax tahay
+    </label><br><br>
+
+    <label>
+        <input type="checkbox" name="confirm_private" required>
+        GGIT is a private visa assistance service | ليست جهة حكومية | Ma ahan Website Dowladeed
+    </label>
+
+    <br><br>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" style="width:100%;padding:12px;background:#007bff;color:white;border:none;font-size:18px;border-radius:5px;cursor:pointer;">
+        Submit Application | إرسال الطلب | Gudbi Codsiga
+    </button>
+</form>
